@@ -1,0 +1,1 @@
+![Hero Image](https://github.com/angarc/engi1006-final/blob/master/final/static/images/hero.png)
