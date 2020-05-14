@@ -10,7 +10,7 @@ However, Instagram makes it basically impossible to post using a script so it's 
 - Flask
 - MySQL
 - Bootstrap
-- jQery (Didn't have time to figure out how to setup Webpack, so I had to settle with the grandfather of frontend tech ;))
+- jQuery (Didn't have time to figure out how to setup Webpack, so I had to settle with the grandfather of frontend tech ;))
 
 ## Third Party Services
 - Reddit (PRAW)
