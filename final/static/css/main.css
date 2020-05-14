@@ -1,3 +1,83 @@
-body {
+* {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  background-color: #0984e3;
+}
+
+.hero-section {
+  position: relative;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.action-section {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.button {
+  transition: .3s;
+  border: none;
+  background-color: #0769b5;
+  color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.hero-title {
+  font-family: 'Orange Juice';
+  font-size: 180px;
+  color: white;
+}
+
+.meme {
+  border-radius: 10px;
+}
+
+.hero-lead {
+  font-family: 'Sunday Morning';
+  font-size: 42px;
+  color: white;
+  margin-top: -20px;
+}
+
+.card {
+  transition: .3s;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 10px 10px 28px -14px rgba(0,0,0,0.75);
+  background-color: white;
+}
+
+.card:hover {
+  transform: scale(1.01) translateY(-5px);
+  box-shadow: 10px 10px 28px -22px rgba(0,0,0,0.75);  
+}
+
+@font-face {
+  font-family: 'Orange Juice'; /*a name to be used later*/
+  src: url('../fonts/Orange\ Juice.ttf'); /*URL to font*/
+}
+
+@font-face {
+  font-family: 'Sunday Morning'; /*a name to be used later*/
+  src: url('../fonts/Sunday\ Morning.ttf'); /*URL to font*/
+}
+
+@media only screen and (min-width: 1500px) {
+  .container-fluid .card-columns {
+    column-count: 5;
+  }
 }
