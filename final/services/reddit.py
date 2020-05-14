@@ -1,7 +1,7 @@
 import praw
 from models.meme import Meme
 from models.shared import db
-from secrets import reddit_client_secret, reddit_user_agent, reddit_client_id
+from credentials import reddit_client_id, reddit_client_secret, reddit_user_agent
 
 class Reddit:
   def __init__(self):
