@@ -1,10 +1,12 @@
 # Meme Machine
-![Hero Image](https://github.com/angarc/engi1006-final/blob/master/final/static/images/hero.png)
+![Hero Image](https://github.com/angarc/engi1006-final/blob/master/ag4219-final/static/images/hero.png)
 
 ## Initial Vision
-I originally wanted Meme Machine to be an automated workflow that would search the internet (right now it only searches Reddit) for memes, pick the most popular and recent ones, download them as images, and then upload them to an instagram meme account, all automatically.
+I originally wanted Meme Machine to be an automated workflow that would search the internet (right now it only searches Reddit) for memes, pick the most popular/recent ones, download them as images, and then upload them to an instagram meme account, all automatically.
 
-However, Instagram makes it basically impossible to post using a script so it's looking like I wont be able automate that. Nonetheless, it still finds new high quality memes that you could then select to download and upload to social media. Just make sure you give credit to the original author of the meme or at least the redditor who shared it!
+However, Instagram makes it basically impossible to post using a script so it's looking like I wont be able automate that. 
+
+Also, if you see anything bad on there, don't blame me, blame the users of Reddit. I don't want to say that I'm pulling memes from appropriate subreddits, because very little of what's on Reddit is appropriate. But what I will say is that I'm pulling memes from subreddits that *aren't meant to be innappropriate*. Suffice it to say that sometimes people post things where they're not supposed to, so don't @ me if you see something bad.
 
 ## Tech Used
 - Flask
