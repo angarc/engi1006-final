@@ -1,6 +1,9 @@
 # Meme Machine
 ![Hero Image](https://github.com/angarc/engi1006-final/blob/master/ag4219-final/static/images/hero.png)
 
+## To Run
+Navigate to the ag4219-final folder and run `flask run`
+
 ## Initial Vision
 I originally wanted Meme Machine to be an automated workflow that would search the internet (right now it only searches Reddit) for memes, pick the most popular/recent ones, download them as images, and then upload them to an instagram meme account, all automatically.
 
@@ -10,7 +13,6 @@ Also, if you see anything bad on there, don't blame me, blame the users of Reddi
 
 ## Tech Used
 - Flask
-- MySQL
 - Bootstrap
 - jQuery (Didn't have time to figure out how to setup Webpack, so I had to settle with the grandfather of frontend tech ;))
 
@@ -23,7 +25,3 @@ Clone the repo, and in the `final` directory, make a `credentials.py` file. You'
 - reddit_client_secret
 - reddit_user_agent
 - reddit_client_id
-- database_uri (Ex: "mysql://username:password@localhost/db_name")
-
-You can get the reddit info from your reddit app page on your dashboard
-Make sure you create the MySQL database and you're golden 🚀
