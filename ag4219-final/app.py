@@ -1,12 +1,15 @@
 from flask import Flask, render_template
+from flask import request
 from services.reddit import Reddit
 import os
 import wget
 from flask_sqlalchemy import SQLAlchemy
-from models.meme import db
+from models.shared import db
 from models.meme import Meme
+from models.subreddit import Subreddit
 import random
 from credentials import database_uri
+import json
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = database_uri
@@ -16,8 +19,12 @@ app.config.update(
 db = SQLAlchemy(app)
 
 @app.route("/")
-def root():
-    # reddit = Reddit()
+def home():
+    return render_template("index.html")
+
+@app.route("/meme-machine")
+def meme():
+    reddit = Reddit()
     # reddit.getPopularMemes("blursedimages")
     # reddit.getPopularMemes("memes")
     # reddit.getPopularMemes("wholesomememes")
@@ -29,13 +36,16 @@ def root():
     # reddit.getPopularMemes("Animemes")
     # reddit.getPopularMemes("WTF")
     memes = Meme.query.all()
+
     random.shuffle(memes)
 
-    # os.chdir('./images/')
-    # for meme in memes:
-    #     wget.download(meme.image_url)
-    # os.chdir('../')
+    subreddits = Subreddit.query.all()
 
-    return render_template('index.html', memes=memes)
+    return render_template('meme_machine.html', memes=memes, subreddits=subreddits)
 
-app.run()
+@app.route("/classes")
+def classes():
+    return render_template('classes.html')
+
+
+#app.run()
