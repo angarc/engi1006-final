@@ -58,7 +58,7 @@ iframe {
 }
 
 .profile-photo-container:after {
-  animation: spin 15s linear infinite;
+  animation: spin 30s linear infinite;
   display: table;
   content: '';
   width: 100%;

@@ -31,12 +31,6 @@
       </div>
     </nav>
     <section class='hero-section'>
-      <!-- <div class='action-section'>
-        <button class='button'><i class='fa fa-download'></i></button>
-        <button type="button" class="button" data-toggle="modal" data-target="#exampleModalCenter">
-          <i class='fa fa-cog'></i>
-        </button>
-      </div> -->
       <h1 class='hero-title'>Meme Machine</h1>
       <p class='hero-lead'>Finding you recent, but popular, memes during these troubling times!</p> 
     </section>
@@ -46,9 +40,7 @@
         {% for meme in memes %}
           <div class='card'>
             <div class='card-body'>
-              <a href="https://reddit.com{{ meme.link }}">
-                <img class='meme' src="{{ meme.image_url }}" width="100%"/>
-              </a>
+              <img class='meme' src="{{ meme.image_url }}" width="100%"/>
             </div>
           </div>
         {% endfor %}
