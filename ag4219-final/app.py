@@ -1,9 +1,8 @@
 from flask import Flask, render_template
 from flask import request
 from services.reddit import Reddit
-import os
-import wget
 from models.meme import Meme
+import os
 import random
 import json
 
@@ -11,7 +10,6 @@ app = Flask(__name__)
 app.config.update(
     TEMPLATES_AUTO_RELOAD = True
 )
-
 
 @app.route("/")
 def home():

@@ -8,6 +8,11 @@ The other page is just a recap of some of the classes I took this semester (2nd 
 ## To Try It Out
 Navigate to the ag4219-final folder and run `flask run`
 
+## Required:
+- praw
+  - `$ pip install praw` This is so the app can get top daily memes from reddit.
+- Python 3.8.0
+
 # Meme Machine
 ![Hero Image](https://github.com/angarc/engi1006-final/blob/master/ag4219-final/static/images/hero.png)
 
