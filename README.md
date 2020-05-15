@@ -19,9 +19,3 @@ Also, if you see anything bad on there, don't blame me, blame the users of Reddi
 ## Third Party Services
 - Reddit (PRAW)
 - Instagram (Not now, but hopefully later)
-
-## If you want to try it out
-Clone the repo, and in the `final` directory, make a `credentials.py` file. You'll need several variables in there.
-- reddit_client_secret
-- reddit_user_agent
-- reddit_client_id
