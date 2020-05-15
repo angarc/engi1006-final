@@ -44,8 +44,37 @@ iframe {
   font-weight: 700;
 }
 
+@media (max-width: 800px) {
+  .header .header__title {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 415px) {
+  .header .header__title {
+    font-size: 70px;
+  }
+}
+
+.header .header__subtitle {
+  display: inline-block;
+  font-size: 45px;
+}
+
+@media (max-width: 800px) {
+  .header .header__subtitle {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 415px) {
+  .header .header__subtitle {
+    font-size: 26px;
+  }
+}
+
 .profile-photo {
-  width: 20vw;
+  width: 100%;
   height: auto;
   border-radius: 50%;
 }
@@ -55,6 +84,20 @@ iframe {
   width: 20vw;
   height: 20vw;
   margin-bottom: 80px;
+}
+
+@media (max-width: 800px) {
+  .profile-photo-container {
+    width: 40vw;
+    height: 40vw;
+  }
+}
+
+@media (max-width: 415px) {
+  .profile-photo-container {
+    width: 50vw;
+    height: 50vw;
+  }
 }
 
 .profile-photo-container:after {
@@ -72,49 +115,6 @@ iframe {
   left: 0;
 }
 
-@media (max-width: 415px) {
-  .header .header__title {
-    font-size: 70px;
-  }
-}
-.header .header__subtitle {
-  display: inline-block;
-  font-size: 45px;
-}
-@media (max-width: 415px) {
-  .header .header__subtitle {
-    font-size: 26px;
-  }
-}
-.header .scroll-indicator {
-  position: absolute;
-  font-size: 50px;
-  bottom: 50px;
-  left: 50%;
-  animation: hoverUpAndDown ease-in-out 2s infinite;
-}
-@media (max-width: 600px) {
-  .header .scroll-indicator {
-    bottom: 0px;
-    animation: hoverUpAndDownMobile ease-in-out 1s infinite;
-  }
-}
-.short-header {
-  max-height: 60vh !important;
-}
-#projects {
-  min-height: 60vh;
-}
-.footer {
-  padding: 30px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.contact {
-  margin: 10px 0;
-}
 @keyframes spin {
   0% {
     transform: scale(1.15) rotate(0deg);
@@ -124,28 +124,5 @@ iframe {
   }
   100% {
     transform: scale(1.15) rotate(360deg);
-  }
-}
-
-@keyframes hoverUpAndDown {
-  0% {
-    transform: translate(-50%, -50px);
-  }
-  50% {
-    transform: translate(-50%, -5px);
-  }
-  100% {
-    transform: translate(-50%, -50px);
-  }
-}
-@keyframes hoverUpAndDownMobile {
-  0% {
-    transform: translate(-50%, -15px);
-  }
-  50% {
-    transform: translate(-50%, 0px);
-  }
-  100% {
-    transform: translate(-50%, -15px);
   }
 }
